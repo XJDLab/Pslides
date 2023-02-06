@@ -1,0 +1,29 @@
+©À©¤MARKER_name
+©¦  ©À©¤HE_tiles   
+©¦  ©¦  ©À©¤ALIGNED       # final coregistered 1x tile
+©¦  ©¦  ©À©¤TILES_10X_ds2  # 10x tiles at downsample level2
+©¦  ©¦  ©À©¤TILES_2X      #2x tiles at downsample level0
+©¦  ©¦  ©À©¤TILES_ALIGNED_ds2   # coregistered 10x tiles at downsample level 2
+©¦  ©¦  ©À©¤TILES_HED                 # hematoxylin tile generated from 10x tiles at downsample level2
+©¦  ©¦  ©¸©¤TILES_RESIZED_ds2    # coregisterd 10x tiles that are cut into 1x tiles at downsample level2 and resized to the size of 1x tiles at downsample level 0
+©¦  ©À©¤HE_wsi #directory saving wsi files of HE or IHC 
+©¦  ©À©¤HE_xml #directory saving annotations of wsi files of HE or IHC 
+©¦  ©À©¤IF_tiles  
+©¦  ©¦  ©¸©¤slide_ID # the name of slides
+©¦  ©¦      ©À©¤TILES # 1x tiles at downsample level 0
+©¦  ©¦      ©À©¤TILES_10x_ds2 # 10x tiles at downsample level2
+©¦  ©¦      ©À©¤TILES_AC # autocontrast corrected tiles
+©¦  ©¦      ©¸©¤TILES_AL #autolevel corrected tiles
+©¦  ©À©¤IF_wsi #directory saving wsi files of IF
+©¦  ©¸©¤IF_xml #directory saving annotations of wsi files of IF
+©¸©¤TrainVal
+    ©¸©¤MARKER_name #marker name
+        ©À©¤checkpoints  
+        ©¦  ©¸©¤pix2pixHD
+        ©¦      ©À©¤Image
+        ©¦      ©¦  ©À©¤Test  # images generated with the trained model
+        ©¦      ©¦  ©¸©¤Train # sample images during training
+        ©¦      ©¸©¤Model # saved model at given intervals
+        ©¸©¤datasets
+            ©À©¤HE_target_tiles # ground truth real HE or IHC tiles 
+            ©¸©¤IF_input_tiles # autofluorescence tiles
